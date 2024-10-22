@@ -35,6 +35,7 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:14.2.15"],\
           ["postcss", "npm:8.4.47"],\
           ["react", "npm:18.3.1"],\
+          ["react-chatbotify", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:2.0.0-beta.19"],\
           ["react-dom", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:18.3.1"],\
           ["tailwindcss", "npm:3.4.14"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
@@ -2455,6 +2456,7 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:14.2.15"],\
           ["postcss", "npm:8.4.47"],\
           ["react", "npm:18.3.1"],\
+          ["react-chatbotify", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:2.0.0-beta.19"],\
           ["react-dom", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:18.3.1"],\
           ["tailwindcss", "npm:3.4.14"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
@@ -3990,6 +3992,32 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["react", "npm:18.3.1"],\
           ["loose-envify", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-chatbotify", [\
+      ["npm:2.0.0-beta.19", {\
+        "packageLocation": "../../.yarn/berry/cache/react-chatbotify-npm-2.0.0-beta.19-497e09b2cf-10c0.zip/node_modules/react-chatbotify/",\
+        "packageDependencies": [\
+          ["react-chatbotify", "npm:2.0.0-beta.19"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:2.0.0-beta.19", {\
+        "packageLocation": "./.yarn/__virtual__/react-chatbotify-virtual-5cb3d73bbd/3/.yarn/berry/cache/react-chatbotify-npm-2.0.0-beta.19-497e09b2cf-10c0.zip/node_modules/react-chatbotify/",\
+        "packageDependencies": [\
+          ["react-chatbotify", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:2.0.0-beta.19"],\
+          ["@types/react", "npm:18.3.11"],\
+          ["@types/react-dom", "npm:18.3.1"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

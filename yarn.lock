@@ -1911,6 +1911,7 @@ __metadata:
     next: "npm:14.2.15"
     postcss: "npm:^8"
     react: "npm:^18"
+    react-chatbotify: "npm:^2.0.0-beta.19"
     react-dom: "npm:^18"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5"
@@ -3233,6 +3234,16 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"react-chatbotify@npm:^2.0.0-beta.19":
+  version: 2.0.0-beta.19
+  resolution: "react-chatbotify@npm:2.0.0-beta.19"
+  peerDependencies:
+    react: ">=16.14.0 <20.0.0 || ^19.0.0-0"
+    react-dom: ">=16.14.0 <20.0.0 || ^19.0.0-0"
+  checksum: 10c0/81c8bb31ab8c2b902ad4fa41cb7dc9a3874622811321655730841d8d8273a380947e9c7251c5f63c4f3b78518d72de3ddcff545a02f49d4462dea7b9523e2428
   languageName: node
   linkType: hard
 
