@@ -3,9 +3,10 @@
 import React, { useRef } from 'react'
 import ChatBot from 'react-chatbotify'
 import axios from 'axios'
-import '../styles/chatbotStyle.css'
+import '../styles/chatbot-style.css'
 import Box from '@mui/material/Box'
 import { Params } from '@/types/Params'
+import { districtFlow } from './flows/district-flow'
 
 export default function Home() {
   const [form, setForm] = React.useState<{ district: string }>({
@@ -165,6 +166,7 @@ export default function Home() {
         }
       },
     },
+    ...districtFlow({ form, setForm }),
   }
 
   return (
