@@ -93,14 +93,19 @@
   }
 }
 
-* {
+/* * {
   font-family: 'Pretendard-Regular' !important;
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff') !important;
   font-style: normal !important;
+} */
+
+* {
+  font-family: 'KoddiUDOnGothic-Regular' !important;
+  src: url('../../public/fonts/KoddiUDOnGothic-Regular.ttf') !important;
 }
 
 .rcb-toggle-icon {
-  background-image: url('../../public/assets/images/recycle-icon.png') !important;
+  background-image: url('../../public/images/recycle-icon.png') !important;
   background-color: white !important;
   width: 75px;
   height: 75px;
