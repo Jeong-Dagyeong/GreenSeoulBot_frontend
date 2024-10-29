@@ -1,0 +1,325 @@
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .rcb-chat-window {
+    width: 400px !important;
+    height: 650px !important;
+  }
+  .rcb-checkbox-next-button {
+    width: 92% !important;
+  }
+  .rcb-chat-tooltip.rcb-tooltip-show {
+    right: 115px !important;
+    bottom: 25px !important;
+  }
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .rcb-chat-window {
+    width: 400px !important;
+    height: 650px !important;
+  }
+  .rcb-checkbox-next-button {
+    width: 92% !important;
+  }
+  .rcb-chat-tooltip.rcb-tooltip-show {
+    right: 115px !important;
+    bottom: 25px !important;
+  }
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .rcb-chat-window {
+    width: 350px !important;
+    height: 550px !important;
+  }
+  .header-title {
+    font-size: 23px !important;
+  }
+  .rcb-chat-header-container {
+    padding: 10px 12px 0px 25px !important;
+  }
+  .rcb-toggle-icon {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .rcb-toggle-button {
+    background-image: none !important;
+    width: 65px !important;
+    height: 65px !important;
+  }
+  .rcb-chat-tooltip.rcb-tooltip-show {
+    right: 105px !important;
+    bottom: 20px !important;
+    padding: 14px 16px 14px 16px !important;
+  }
+  .rcb-checkbox-next-button {
+    width: 70% !important;
+  }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media screen and (max-width: 479px) {
+  .rcb-chat-window {
+    width: 300px !important;
+    height: 500px !important;
+  }
+  .header-title {
+    font-size: 20px !important;
+  }
+  .rcb-chat-header-container {
+    padding: 10px 12px 0px 22px !important;
+  }
+  .rcb-toggle-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .rcb-toggle-button {
+    background-image: none !important;
+    width: 55px !important;
+    height: 55px !important;
+  }
+  .rcb-chat-tooltip.rcb-tooltip-show {
+    right: 95px !important;
+    bottom: 20px !important;
+    padding: 10px 12px 10px 12px !important;
+  }
+  .rcb-checkbox-next-button {
+    width: 82% !important;
+  }
+  .rcb-chat-tooltip-tail {
+    right: -9px !important;
+  }
+}
+
+/* * {
+  font-family: 'Pretendard-Regular' !important;
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff') !important;
+  font-style: normal !important;
+} */
+
+* {
+  font-family: 'KoddiUDOnGothic-Regular' !important;
+  src: url('../../public/fonts/KoddiUDOnGothic-Regular.ttf') !important;
+}
+
+.rcb-toggle-icon {
+  background-image: url('../../public/images/recycle-icon.png') !important;
+  background-color: white !important;
+  width: 75px;
+  height: 75px;
+}
+
+.rcb-chat-window {
+  box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0.05) 0px 0px 2px 1px,
+    rgba(0, 0, 0, 0.3) 0px 12px 60px !important;
+  border-radius: 30px !important;
+}
+
+/* 25개 구  */
+.rcb-checkbox-container {
+  display: flex !important;
+  flex-direction: row !important;
+  max-width: 87% !important;
+}
+
+.rcb-checkbox-row-container {
+  width: 100px !important;
+  color: #163020 !important;
+  border-color: #b6c4b6 !important;
+}
+
+.rcb-checkbox-offset {
+  margin-left: 44px !important;
+}
+
+.rcb-checkbox-mark {
+  background-color: #eef0e5;
+  align-items: normal !important;
+  content: '✓';
+  transition: all 0.3s ease;
+}
+
+.rcb-checkbox-next-button {
+  /* width: 92% !important; */
+  color: #b6c4b6 !important;
+  border-color: #b6c4b6 !important;
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: center !important;
+}
+
+/* 헤더 */
+.header-container {
+  display: flex !important;
+}
+
+.rcb-close-chat-icon {
+  width: 18px !important;
+  height: 20px !important;
+  margin-right: 10px !important;
+}
+
+.rcb-chat-header {
+  display: flex !important;
+  align-items: center;
+}
+
+.rcb-chat-header-container {
+  display: flex !important;
+  background: #ffffff !important;
+  border-bottom: none !important;
+  height: 100px !important;
+  max-height: none !important;
+  padding: 10px 12px 0px 30px !important;
+}
+
+.header-font {
+  font-size: 30px !important;
+  font-family: 'Pretendard-Regular' !important;
+}
+
+/* 아바타 */
+.rcb-bot-avatar {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* user 말풍선  */
+.rcb-user-message.rcb-user-message-entry {
+  background-color: #304d30 !important;
+  color: #fbfbfb !important;
+  padding: 7px 12px !important;
+  font-size: 14px !important;
+}
+
+.rcb-user-message.rcb-user-message-entry {
+  margin-top: 20px !important;
+  margin-right: 28px !important;
+}
+
+/* chatbot 말풍선 */
+.rcb-bot-message.rcb-bot-message-entry {
+  background-color: #eef0e5 !important;
+  color: #163020 !important;
+}
+
+.rcb-message-bot-avatar {
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 28px !important;
+}
+
+/* chatbot 버튼 */
+.rcb-options {
+  background-color: #fbfbfb !important;
+  color: #163020 !important;
+  border-color: #163020 !important;
+  font-size: 12px !important;
+  padding: 7px 12px !important;
+}
+
+.rcb-options-offset {
+  margin-left: 64px !important;
+}
+
+/* send 버튼 */
+.rcb-send-button {
+  background-color: #304d30 !important;
+  box-shadow: none !important;
+  border-radius: 30px !important;
+  height: 42px !important;
+  width: 42px !important;
+}
+
+.rcb-send-icon {
+  background-image: URL('https://img.icons8.com/?size=100&id=2837&format=png&color=fbfbfb') !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* input box */
+.rcb-chat-input {
+  width: 90% !important;
+  /* display: absolute !important; */
+  padding: 8px 0px 8px 16px !important;
+  height: 100px !important;
+  border-top: none !important;
+  margin-left: 14px !important;
+}
+
+.rcb-chat-input-textarea {
+  width: 80% !important;
+  border-radius: 50px !important;
+  background-color: #eef0e5 !important;
+  padding: 14px 0px 0px 20px !important;
+  box-shadow: none !important;
+  box-sizing: unset !important;
+}
+
+.rcb-chat-input-textarea:focus {
+  outline: 0 !important;
+}
+
+.footer-text {
+  font-size: 8px !important;
+  color: #888d92 !important;
+}
+
+.rcb-chat-footer-container {
+  padding: 0px 16px 8px 10px !important;
+  background-color: #ffffff !important;
+  border: none !important;
+}
+
+.rcb-chat-footer {
+  display: absolute !important;
+}
+
+.rcb-attach-icon-disabled {
+  background-image: URL('https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30') !important;
+  /* margin-left: 17px !important; */
+  margin-top: -4px !important;
+}
+
+.rcb-attach-icon-enabled {
+  background-image: URL('https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30') !important;
+  /* margin-left: 17xp !important; */
+  margin-top: -4px !important;
+}
+
+.rcb-attach-button-enabled,
+.rcb-attach-button-disabled {
+  margin-left: 17px !important;
+}
+
+.rcb-attach-button-enabled:after {
+  background-image: URL('https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30');
+  position: unset !important;
+  top: 0% !important;
+  left: 0% !important;
+  background-color: transparent !important;
+}
+
+/* 이미지 */
+.rcb-media-display-image-container.rcb-media-entry {
+  background-color: #ffffff !important;
+  padding: 0px !important;
+}
+
+/* Tooltip  */
+.rcb-chat-tooltip.rcb-tooltip-show {
+  opacity: 1;
+  visibility: visible;
+  animation: tooltip-in 0.5s ease-in-out;
+  background-color: #304d30 !important;
+  color: #fbfbfb !important;
+}
+
+.rcb-chat-tooltip-tail {
+  border-color: #304d30 !important;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
