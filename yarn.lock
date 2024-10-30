@@ -2469,6 +2469,7 @@ __metadata:
     react: "npm:^18"
     react-chatbotify: "npm:^2.0.0-beta.19"
     react-dom: "npm:^18"
+    react-image-file-resizer: "npm:^0.4.8"
     tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5"
   languageName: unknown
@@ -3886,6 +3887,13 @@ __metadata:
   peerDependencies:
     react: ^18.3.1
   checksum: 10c0/a752496c1941f958f2e8ac56239172296fcddce1365ce45222d04a1947e0cc5547df3e8447f855a81d6d39f008d7c32eab43db3712077f09e3f67c4874973e85
+  languageName: node
+  linkType: hard
+
+"react-image-file-resizer@npm:^0.4.8":
+  version: 0.4.8
+  resolution: "react-image-file-resizer@npm:0.4.8"
+  checksum: 10c0/24482416f0b53cba7e4851307d3a43c3ce5bd9e4a87a7b8af5bbd11501558ae56f7edc31feb582dfa0b46068fb5ac659d14cd46381db69683a1015ae7e16e467
   languageName: node
   linkType: hard
 

@@ -42,6 +42,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-chatbotify", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:2.0.0-beta.19"],\
           ["react-dom", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:18.3.1"],\
+          ["react-image-file-resizer", "npm:0.4.8"],\
           ["tailwindcss", "npm:3.4.14"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
@@ -3177,6 +3178,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-chatbotify", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:2.0.0-beta.19"],\
           ["react-dom", "virtual:9d9715d01d8552dedfe845dfa4fe94424f702c47c5c7a1b205de92a46ff418fcd090f2286541858506da99d0dd32042e4d3725eab966b14e0f7944130e39f262#npm:18.3.1"],\
+          ["react-image-file-resizer", "npm:0.4.8"],\
           ["tailwindcss", "npm:3.4.14"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
@@ -4848,6 +4850,15 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/react",\
           "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-image-file-resizer", [\
+      ["npm:0.4.8", {\
+        "packageLocation": "../../.yarn/berry/cache/react-image-file-resizer-npm-0.4.8-6676df75d7-10c0.zip/node_modules/react-image-file-resizer/",\
+        "packageDependencies": [\
+          ["react-image-file-resizer", "npm:0.4.8"]\
         ],\
         "linkType": "HARD"\
       }]\

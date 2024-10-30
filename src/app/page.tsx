@@ -7,6 +7,7 @@ import '../styles/chatbot-style.css'
 import Box from '@mui/material/Box'
 import { Params } from '@/types/Params'
 import { districtFlow } from './flows/district-flow'
+import { uploadFileFlow } from './flows/upload-file-flow'
 
 export default function Home() {
   const [form, setForm] = React.useState<{ district: string }>({
@@ -89,7 +90,7 @@ export default function Home() {
 
   const inputTextRef = useRef('')
 
-  const helpOptions = ['사용방법', '재활용품 지원정책', '이미지로 대형폐기물 수수료 알아보기']
+  const helpOptions = ['사용방법', '재활용품 지원정책', '이미지로 대형폐기물 수수료 알아보기', '챗봇 확대하기']
   const howToReCycle = ['재활용품 지원 정책', '이미지로 대형폐기물 수수료 알아보기']
 
   const flow = {
@@ -109,6 +110,8 @@ export default function Home() {
             return 'district_start'
           case '이미지로 대형폐기물 수수료 알아보기':
             return 'uploadFile_district'
+          case '챗봇 확대하기':
+            return 'enlarge-mode'
           default:
             return 'communicate'
         }
@@ -167,6 +170,7 @@ export default function Home() {
       },
     },
     ...districtFlow({ form, setForm }),
+    ...uploadFileFlow({ form, setForm }),
   }
 
   return (
