@@ -17,9 +17,12 @@ export default function Home() {
   const settings = {
     isOpen: false,
     general: {
-      fontFamily: 'Pretendard-Regular',
+      fontFamily: 'KoddiUDOnGothic-Regular',
       primaryColor: '#304D30',
       actionDisabledIcon: 'none',
+    },
+    chatButton: {
+      icon: '../../public/images/recycle-icon.png',
     },
     tooltip: {
       mode: 'CLOSE',
@@ -38,7 +41,7 @@ export default function Home() {
       rate: 1,
       volume: 1,
     },
-    //아직 원리 모름
+    // 아직 원리 모름
     voice: {
       disabled: false,
       language: 'ko - KR',
@@ -68,12 +71,15 @@ export default function Home() {
     chatInput: {
       enabledPlaceholderText: '메세지를 입력해주세요.',
       botDelay: 1500,
+      sendButtonIcon: 'https://img.icons8.com/?size=100&id=2837&format=png&color=fbfbfb',
     },
     fileAttachment: {
       showMediaDisplay: true,
       sendFileName: false,
       multiple: false,
-      accept: '*',
+      accept: '*', // 첨부파일에 허용되는 형식 * 는 전체허용
+      icon: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
+      iconDisabled: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
     },
     footer: {
       text: (
@@ -87,6 +93,21 @@ export default function Home() {
       disabled: true,
     },
   }
+
+  // const styles = {
+  //   notificationIconStyle: {
+  //     fill: 'pink',
+  //   },
+  //   notificationButtonStyle: {
+  //     fill: 'black',
+  //   },
+  //   voiceButtonStyle: {
+  //     fill: 'pink',
+  //   },
+  //   voiceButtonDisabledStyle: {
+  //     fill: 'pink',
+  //   },
+  // }
 
   const inputTextRef = useRef('')
 
@@ -176,7 +197,11 @@ export default function Home() {
   return (
     <div>
       <Box>
-        <ChatBot settings={settings} flow={flow} />
+        <ChatBot
+          settings={settings}
+          flow={flow}
+          // styles={styles}
+        />
       </Box>
     </div>
   )
