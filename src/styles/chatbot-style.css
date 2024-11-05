@@ -1,3 +1,18 @@
+/* 1280px 이상 */
+@media all and (min-width: 1280px) {
+  .rcb-chat-window {
+    width: 400px !important;
+    height: 650px !important;
+  }
+  .rcb-checkbox-next-button {
+    width: 92% !important;
+  }
+  .rcb-chat-tooltip.rcb-tooltip-show {
+    right: 115px !important;
+    bottom: 25px !important;
+  }
+}
+
 /* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
 @media all and (min-width: 1024px) and (max-width: 1279px) {
   .rcb-chat-window {
@@ -41,6 +56,7 @@
     padding: 10px 12px 0px 25px !important;
   }
   .rcb-toggle-icon {
+    /* z-index: 1000 !important; */
     width: 60px !important;
     height: 60px !important;
   }
@@ -66,6 +82,7 @@
     height: 500px !important;
   }
   .header-title {
+    width: 140px !important;
     font-size: 20px !important;
   }
   .rcb-chat-header-container {
@@ -91,13 +108,10 @@
   .rcb-chat-tooltip-tail {
     right: -9px !important;
   }
+  .rcb-audio-icon {
+    margin-right: 65px !important;
+  }
 }
-
-/* * {
-  font-family: 'Pretendard-Regular' !important;
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff') !important;
-  font-style: normal !important;
-} */
 
 * {
   font-family: 'KoddiUDOnGothic-Regular' !important;
@@ -231,22 +245,23 @@
   border-radius: 30px !important;
   height: 42px !important;
   width: 42px !important;
+  margin-left: 15px !important;
 }
 
 .rcb-send-icon {
-  background-image: URL('https://img.icons8.com/?size=100&id=2837&format=png&color=fbfbfb') !important;
-  width: 20px !important;
-  height: 20px !important;
+  width: 18px !important;
+  height: 30px !important;
 }
 
 /* input box */
 .rcb-chat-input {
-  width: 90% !important;
+  /* width: 90% !important; */
   /* display: absolute !important; */
-  padding: 8px 0px 8px 16px !important;
-  height: 100px !important;
+  /* display: flex !important; */
+  /* padding: 8px 0px 8px 0px !important; */
+  /* height: 100px !important; */
   border-top: none !important;
-  margin-left: 14px !important;
+  /* margin-left: 14px !important; */
 }
 
 .rcb-chat-input-textarea {
@@ -277,25 +292,12 @@
   display: absolute !important;
 }
 
-.rcb-attach-icon-disabled {
-  background-image: URL('https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30') !important;
-  /* margin-left: 17px !important; */
-  margin-top: -4px !important;
-}
-
-.rcb-attach-icon-enabled {
-  background-image: URL('https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30') !important;
-  /* margin-left: 17xp !important; */
-  margin-top: -4px !important;
-}
-
 .rcb-attach-button-enabled,
 .rcb-attach-button-disabled {
-  margin-left: 17px !important;
+  margin-left: 10px !important;
 }
 
 .rcb-attach-button-enabled:after {
-  background-image: URL('https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30');
   position: unset !important;
   top: 0% !important;
   left: 0% !important;
@@ -322,4 +324,19 @@
   border-top-color: transparent !important;
   border-right-color: transparent !important;
   border-bottom-color: transparent !important;
+}
+
+/* voice */
+.rcb-audio-icon {
+  width: 20px !important;
+  height: 16px !important;
+  margin-right: 90px !important;
+}
+
+.rcb-voice-button-enabled,
+.rcb-voice-button-disabled {
+  margin-left: -40px !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
 }
