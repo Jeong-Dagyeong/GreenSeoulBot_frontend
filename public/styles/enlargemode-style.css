@@ -1,121 +1,47 @@
-/* 1280px 이상 */
-@media all and (min-width: 1280px) {
-  .rcb-chat-window {
-    width: 400px !important;
-    height: 650px !important;
-  }
-  .rcb-checkbox-next-button {
-    width: 92% !important;
-  }
-  .rcb-chat-tooltip.rcb-tooltip-show {
-    right: 115px !important;
-    bottom: 25px !important;
-  }
-}
-
-/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
-@media all and (min-width: 1024px) and (max-width: 1279px) {
-  .rcb-chat-window {
-    width: 400px !important;
-    height: 650px !important;
-  }
-  .rcb-checkbox-next-button {
-    width: 92% !important;
-  }
-  .rcb-chat-tooltip.rcb-tooltip-show {
-    right: 115px !important;
-    bottom: 25px !important;
-  }
-}
-
-/* 테블릿 가로 (해상도 768px ~ 1023px)*/
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  .rcb-chat-window {
-    width: 400px !important;
-    height: 650px !important;
-  }
-  .rcb-checkbox-next-button {
-    width: 92% !important;
-  }
-  .rcb-chat-tooltip.rcb-tooltip-show {
-    right: 115px !important;
-    bottom: 25px !important;
-  }
-}
-
-/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .rcb-chat-window {
-    width: 350px !important;
-    height: 550px !important;
-  }
-  .header-title {
-    font-size: 23px !important;
-  }
-  .rcb-chat-header-container {
-    padding: 10px 12px 0px 25px !important;
-  }
-  .rcb-toggle-icon {
-    /* z-index: 1000 !important; */
-    width: 60px !important;
-    height: 60px !important;
-  }
-  .rcb-toggle-button {
-    background-image: none !important;
-    width: 65px !important;
-    height: 65px !important;
-  }
-  .rcb-chat-tooltip.rcb-tooltip-show {
-    right: 105px !important;
-    bottom: 20px !important;
-    padding: 14px 16px 14px 16px !important;
-  }
-  .rcb-checkbox-next-button {
-    width: 70% !important;
-  }
-}
-
-/* 모바일 세로 (해상도 ~ 479px)*/
-@media screen and (max-width: 479px) {
-  .rcb-chat-window {
-    width: 300px !important;
-    height: 500px !important;
-  }
-  .header-title {
-    width: 140px !important;
-    font-size: 20px !important;
-  }
-  .rcb-chat-header-container {
-    padding: 10px 12px 0px 22px !important;
-  }
-  .rcb-toggle-icon {
-    width: 50px !important;
-    height: 50px !important;
-  }
-  .rcb-toggle-button {
-    background-image: none !important;
-    width: 55px !important;
-    height: 55px !important;
-  }
-  .rcb-chat-tooltip.rcb-tooltip-show {
-    right: 95px !important;
-    bottom: 20px !important;
-    padding: 10px 12px 10px 12px !important;
-  }
-  .rcb-checkbox-next-button {
-    width: 82% !important;
-  }
-  .rcb-chat-tooltip-tail {
-    right: -9px !important;
-  }
-  .rcb-audio-icon {
-    margin-right: 65px !important;
-  }
-}
-
 * {
   font-family: 'KoddiUDOnGothic-Regular' !important;
   src: url('../../public/fonts/KoddiUDOnGothic-Regular.ttf') !important;
+}
+
+@media all and (min-width: 1280px) {
+  .rcb-chat-window {
+    width: 1200px !important;
+    height: 750px !important;
+  }
+  div[aria-label='toggle audio'] {
+    margin-right: 735px !important;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .rcb-chat-window {
+    width: 1024px !important;
+    /* height: calc(1024px * (2 / 3)) !important; */
+    height: 700px !important;
+  }
+  div[aria-label='toggle audio'] {
+    margin-right: 560px !important;
+  }
+  .rcb-checkbox-next-button {
+    width: 92% important;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .rcb-chat-window {
+    width: 768px !important;
+    /* height: calc(768px * (2 / 3)) !important; */
+    height: 650px !important;
+  }
+  div[aria-label='toggle audio'] {
+    margin-right: 305px !important;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media screen and (max-width: 479px) {
 }
 
 .rcb-toggle-icon {
@@ -125,11 +51,13 @@
   height: 75px;
 }
 
-.rcb-chat-window {
+/* .rcb-chat-window {
+  width: 1200px !important;
+  height: 800px !important;
   box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0.05) 0px 0px 2px 1px,
     rgba(0, 0, 0, 0.3) 0px 12px 60px !important;
   border-radius: 30px !important;
-}
+} */
 
 /* 25개 구  */
 .rcb-checkbox-container {
@@ -139,13 +67,23 @@
 }
 
 .rcb-checkbox-row-container {
-  width: 100px !important;
+  width: 110px !important;
   color: #163020 !important;
   border-color: #b6c4b6 !important;
+  min-height: 45px !important;
+  justify-content: center !important;
+}
+
+.rcb-checkbox-row {
+  margin-left: 0px !important;
 }
 
 .rcb-checkbox-offset {
-  margin-left: 44px !important;
+  margin-left: 82px !important;
+}
+
+.rcb-checkbox-label {
+  font-size: 16px !important;
 }
 
 .rcb-checkbox-mark {
@@ -156,7 +94,7 @@
 }
 
 .rcb-checkbox-next-button {
-  /* width: 92% !important; */
+  width: 91% !important;
   color: #b6c4b6 !important;
   border-color: #b6c4b6 !important;
   display: flex !important;
@@ -170,28 +108,36 @@
 }
 
 .rcb-close-chat-icon {
-  width: 18px !important;
-  height: 20px !important;
-  margin-right: 10px !important;
+  width: 25px !important;
+  height: 25px !important;
+  /* margin-right: 10px !important; */
+  margin-left: 0px !important;
 }
 
 .rcb-chat-header {
   display: flex !important;
-  align-items: center;
+  /* align-items: center; */
+  width: fit-content !important;
 }
+
+/* div[aria-label='toggle audio']:hover {
+  pointer-events: none;
+}
+
+div[aria-label='toggle audio']:active {
+  pointer-events: none;
+} */
 
 .rcb-chat-header-container {
-  display: flex !important;
-  background: #ffffff !important;
-  border-bottom: none !important;
-  height: 100px !important;
-  max-height: none !important;
-  padding: 10px 12px 0px 30px !important;
+  padding: 0px 12px 0px 30px !important;
+  justify-content: flex-start !important;
 }
 
-.header-font {
-  font-size: 30px !important;
-  font-family: 'Pretendard-Regular' !important;
+.header-title {
+  color: rgb(22, 48, 32) !important;
+  font-size: 35px !important;
+  font-weight: 600 !important;
+  width: 250px !important;
 }
 
 /* 아바타 */
@@ -205,23 +151,21 @@
   background-color: #304d30 !important;
   color: #fbfbfb !important;
   padding: 7px 12px !important;
-  font-size: 14px !important;
-}
-
-.rcb-user-message.rcb-user-message-entry {
+  font-size: 25px !important;
   margin-top: 20px !important;
   margin-right: 28px !important;
 }
 
 /* chatbot 말풍선 */
 .rcb-bot-message.rcb-bot-message-entry {
+  font-size: 25px !important;
   background-color: #eef0e5 !important;
   color: #163020 !important;
 }
 
 .rcb-message-bot-avatar {
-  width: 30px !important;
-  height: 30px !important;
+  width: 50px !important;
+  height: 50px !important;
   margin-left: 28px !important;
 }
 
@@ -230,12 +174,12 @@
   background-color: #fbfbfb !important;
   color: #163020 !important;
   border-color: #163020 !important;
-  font-size: 12px !important;
+  font-size: 18px !important;
   padding: 7px 12px !important;
 }
 
 .rcb-options-offset {
-  margin-left: 64px !important;
+  margin-left: 84px !important;
 }
 
 /* send 버튼 */
@@ -255,13 +199,7 @@
 
 /* input box */
 .rcb-chat-input {
-  /* width: 90% !important; */
-  /* display: absolute !important; */
-  /* display: flex !important; */
-  /* padding: 8px 0px 8px 0px !important; */
-  /* height: 100px !important; */
   border-top: none !important;
-  /* margin-left: 14px !important; */
 }
 
 .rcb-chat-input-textarea {
@@ -283,18 +221,23 @@
 }
 
 .rcb-chat-footer-container {
-  padding: 0px 16px 8px 10px !important;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px 8px 18px !important;
   background-color: #ffffff !important;
   border: none !important;
 }
 
 .rcb-chat-footer {
-  display: absolute !important;
+  display: flex;
+  align-items: center;
 }
 
-.rcb-attach-button-enabled,
-.rcb-attach-button-disabled {
-  margin-left: 10px !important;
+.rcb-attach-icon-enabled,
+.rcb-attach-icon-disabled {
+  width: 35px !important;
+  height: 35px !important;
+  margin-top: -3px !important;
 }
 
 .rcb-attach-button-enabled:after {
@@ -328,9 +271,9 @@
 
 /* voice */
 .rcb-audio-icon {
-  width: 20px !important;
+  width: 28px !important;
   height: 16px !important;
-  margin-right: 90px !important;
+  margin-bottom: 7px !important;
 }
 
 .rcb-voice-button-enabled,
@@ -339,4 +282,33 @@
   border: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
+}
+
+/* 고대비 버튼 */
+
+.darkmode-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+  transition: background-image 0.6s ease;
+  background-size: 100% 100%;
+  margin-left: 20px;
+}
+
+.darkmode-button:hover {
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+}
+
+.darkmode-button:active {
+  background-color: transparent;
+}
+
+/* 이미지 결과 */
+.image-result {
+  width: 600px;
+  margin-left: 85px;
 }

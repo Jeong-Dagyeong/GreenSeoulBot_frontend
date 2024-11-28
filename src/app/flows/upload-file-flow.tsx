@@ -158,6 +158,7 @@ export const uploadFileFlow = ({ form, setForm }: DistrictFlowProps) => ({
       const response = await handleUpload({ ...params, ...form }, { form, setForm })
       return (
         <Box
+          className="image-result"
           sx={{
             p: 2,
             border: '1px solid grey',
