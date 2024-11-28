@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useRef } from 'react'
-import ChatBot from 'react-chatbotify'
+import React, { useEffect, useRef, useState } from 'react'
+import ChatBot, { Button } from 'react-chatbotify'
 import axios from 'axios'
-import '../styles/chatbot-style.css'
+import '/public/styles/chatbot-style.css'
+
 import Box from '@mui/material/Box'
 import { Params } from '@/types/Params'
 import { districtFlow } from './flows/district-flow'
@@ -13,6 +14,45 @@ export default function Home() {
   const [form, setForm] = React.useState<{ district: string }>({
     district: '',
   })
+
+  const [isEnlargeMode, setIsEnlargeMode] = useState(false) // 확대 모드 상태 관리
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  const DARK_MODE_ICON = 'https://img.icons8.com/?size=100&id=1NVn5K29mOSz&format=png&color=ffffff'
+  const LIGHT_MODE_ICON = 'https://img.icons8.com/?size=100&id=1NVn5K29mOSz&format=png&color=0000000'
+
+  // 확대 모드 토글 함수
+  const toggleEnlargeMode = async () => {
+    setIsEnlargeMode((prev) => !prev)
+
+    if (!isEnlargeMode) {
+      document.body.classList.add('enlarge-mode')
+      const { loadCSS } = await import('@/app/utils/styles') // utils 폴더의 styles.tsx
+      await loadCSS('/styles/enlargemode-style.css') // public/styles 경로에 맞게 수정
+      console.log('Enlarge mode activated')
+    } else {
+      document.body.classList.remove('enlarge-mode')
+      const { removeCSS } = await import('@/app/utils/styles')
+      await removeCSS('/styles/enlargemode-style.css')
+      console.log('Enlarge mode deactivated')
+    }
+  }
+
+  // 다크모드 활성화 함수
+  const darkModeBtn = async () => {
+    const isDarkMode = document.body.classList.toggle('dark-mode') // 다크 모드 활성화 상태 토글
+    if (isDarkMode) {
+      // 다크 모드 활성화
+      const { loadCSS } = await import('@/app/utils/styles') // 동적 import
+      await loadCSS('/styles/darkmode-style.css') // darkmode-style.css 파일 로드
+      console.log('Dark mode activated')
+    } else {
+      // 다크 모드 비활성화
+      const { removeCSS } = await import('@/app/utils/styles') // 동적 import
+      await removeCSS('/styles/darkmode-style.css') // darkmode-style.css 파일 제거
+      console.log('Dark mode deactivated')
+    }
+  }
 
   const settings = {
     isOpen: false,
@@ -37,27 +77,26 @@ export default function Home() {
     audio: {
       disabled: false,
       defaultToggledOn: true,
-      language: 'ko - KR',
+      language: 'ko-KR',
       rate: 1,
       volume: 1,
     },
-    // 아직 원리 모름
     voice: {
       disabled: false,
-      language: 'ko - KR',
+      language: 'ko-KR',
       autoSendDisabled: true,
     },
     header: {
       title: (
-        <div className="header-container" style={{ display: 'flex' }}>
-          <div className="header-title" style={{ color: '#163020', fontSize: '28px', fontWeight: '600' }}>
-            Green Seoul Bot
-          </div>
+        <div className="header-container">
+          <div className="header-title">Green Seoul Bot</div>
         </div>
       ),
       avatar: '',
       showAvatar: false,
-      closeChatIcon: 'https://img.icons8.com/?size=100&id=1NVn5K29mOSz&format=png&color=000000',
+      // closeChatIcon: isDarkMode ? DARK_MODE_ICON : LIGHT_MODE_ICON,
+      closeChatIcon: LIGHT_MODE_ICON,
+      closeChatDisabled: DARK_MODE_ICON,
     },
     botBubble: {
       showAvatar: true,
@@ -79,35 +118,25 @@ export default function Home() {
       multiple: false,
       accept: '*', // 첨부파일에 허용되는 형식 * 는 전체허용
       icon: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
-      iconDisabled: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
+      // iconDisabled: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
+      iconDisabled: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=ADB7AC',
     },
     footer: {
       text: (
         <div>
           <span>Team </span>
-          <span style={{ fontWeight: 'bold' }}>4cycle</span>
+          <span style={{ fontWeight: 'bold' }}>G.cycle</span>
         </div>
       ),
+      buttons: [
+        Button.FILE_ATTACHMENT_BUTTON,
+        <button key="custom-button" className="darkmode-button" onClick={darkModeBtn}></button>,
+      ],
     },
     emoji: {
       disabled: true,
     },
   }
-
-  // const styles = {
-  //   notificationIconStyle: {
-  //     fill: 'pink',
-  //   },
-  //   notificationButtonStyle: {
-  //     fill: 'black',
-  //   },
-  //   voiceButtonStyle: {
-  //     fill: 'pink',
-  //   },
-  //   voiceButtonDisabledStyle: {
-  //     fill: 'pink',
-  //   },
-  // }
 
   const inputTextRef = useRef('')
 
@@ -121,6 +150,10 @@ export default function Home() {
       options: helpOptions,
       function: (params: Params) => {
         setForm({ district: params.userInput })
+        if (params.userInput === '챗봇 확대하기') {
+          toggleEnlargeMode() // '챗봇 확대하기'일 경우만 호출
+          console.log(params.userInput)
+        }
       },
       path: (params: Params) => {
         inputTextRef.current = params.userInput
@@ -132,7 +165,30 @@ export default function Home() {
           case '이미지로 대형폐기물 수수료 알아보기':
             return 'uploadFile_district'
           case '챗봇 확대하기':
-            return 'enlarge-mode'
+            return 'enlarge_mode'
+          default:
+            return 'communicate'
+        }
+      },
+    },
+
+    enlarge_mode: {
+      message: '확대모드를 적용 중입니다.',
+      function: (params: Params) => {
+        setForm({ district: params.userInput })
+      },
+      options: helpOptions,
+      path: (params: Params) => {
+        inputTextRef.current = params.userInput
+        switch (params.userInput) {
+          case '사용방법':
+            return 'middle'
+          case '재활용품 지원정책':
+            return 'district_start'
+          case '이미지로 대형폐기물 수수료 알아보기':
+            return 'uploadFile_district'
+          case '챗봇 확대하기':
+            return 'enlarge_mode'
           default:
             return 'communicate'
         }
@@ -190,6 +246,7 @@ export default function Home() {
         }
       },
     },
+
     ...districtFlow({ form, setForm }),
     ...uploadFileFlow({ form, setForm }),
   }
@@ -197,11 +254,7 @@ export default function Home() {
   return (
     <div>
       <Box>
-        <ChatBot
-          settings={settings}
-          flow={flow}
-          // styles={styles}
-        />
+        <ChatBot settings={settings} flow={flow} />
       </Box>
     </div>
   )

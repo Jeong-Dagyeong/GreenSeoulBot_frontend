@@ -1,0 +1,59 @@
+.rcb-chat-window {
+  background-color: #1e1e1e;
+  color: #eef0e5 !important;
+}
+
+.rcb-chat-header-container {
+  background-color: #1e1e1e !important;
+}
+
+.header-title {
+  color: #eef0e5 !important;
+}
+
+.rcb-chat-input {
+  background-color: #1e1e1e !important;
+}
+
+.rcb-chat-footer-container {
+  background-color: #1e1e1e !important;
+  color: #eef0e5 !important;
+}
+
+.rcb-bot-message.rcb-bot-message-entry {
+  /* background-color: #3f6b3f !important; */
+  background-color: #3f6b3f !important;
+  /* color: #ffffff !important; */
+  color: #eef0e5 !important;
+}
+
+.rcb-options {
+  background-color: #eef0e5 !important;
+  /* color: #eef0e5 !important; */
+  color: #304d30 !important;
+}
+
+.rcb-user-message.rcb-user-message-entry {
+  background-color: #304d30 !important;
+}
+
+.rcb-checkbox-row-container {
+  background-color: #eef0e5 !important;
+  color: #304d30 !important;
+}
+
+.rcb-checkbox-next-button {
+  background-color: #eef0e5 !important;
+}
+
+.rcb-attach-icon-disabled {
+  fill: #adb7ac !important;
+}
+
+.rcb-checkbox-mark {
+  background-color: #4e754e !important;
+}
+
+.rcb-checkbox-next-button:before {
+  color: #4e754e !important;
+}
