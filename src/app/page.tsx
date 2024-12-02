@@ -21,7 +21,7 @@ export default function Home() {
   const DARK_MODE_ICON = 'https://img.icons8.com/?size=100&id=1NVn5K29mOSz&format=png&color=ffffff'
   const LIGHT_MODE_ICON = 'https://img.icons8.com/?size=100&id=1NVn5K29mOSz&format=png&color=0000000'
 
-  // 확대 모드 토글 함수
+  // 확대 모드 함수
   const toggleEnlargeMode = async () => {
     setIsEnlargeMode((prev) => !prev)
 
@@ -94,7 +94,6 @@ export default function Home() {
       ),
       avatar: '',
       showAvatar: false,
-      // closeChatIcon: isDarkMode ? DARK_MODE_ICON : LIGHT_MODE_ICON,
       closeChatIcon: LIGHT_MODE_ICON,
       closeChatDisabled: DARK_MODE_ICON,
     },
@@ -118,7 +117,6 @@ export default function Home() {
       multiple: false,
       accept: '*', // 첨부파일에 허용되는 형식 * 는 전체허용
       icon: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
-      // iconDisabled: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=304D30',
       iconDisabled: 'https://img.icons8.com/?size=100&id=ctfuCrTkdAJ8&format=png&color=ADB7AC',
     },
     footer: {

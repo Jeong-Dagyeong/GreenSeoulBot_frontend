@@ -120,13 +120,13 @@
   width: fit-content !important;
 }
 
-/* div[aria-label='toggle audio']:hover {
-  pointer-events: none;
+.rcb-close-chat-icon:after {
+  background-color: transparent !important;
 }
 
-div[aria-label='toggle audio']:active {
-  pointer-events: none;
-} */
+.rcb-audio-icon:after {
+  background-color: transparent !important;
+}
 
 .rcb-chat-header-container {
   padding: 0px 12px 0px 30px !important;
