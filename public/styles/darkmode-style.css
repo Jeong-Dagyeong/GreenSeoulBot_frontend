@@ -3,6 +3,26 @@
   color: #eef0e5 !important;
 }
 
+.rcb-close-chat-icon {
+  background-image: url('../images/close.png') !important;
+}
+
+.rcb-attach-icon-disabled {
+  background-image: url('../images/picture.png') !important;
+}
+
+.rcb-close-chat-icon:after {
+  background-color: transparent !important;
+}
+
+.rcb-audio-icon:after {
+  background-color: transparent !important;
+}
+
+.rcb-attach-icon-enabled {
+  background-image: url('../images/picture_darkmode.png') !important;
+}
+
 .rcb-chat-header-container {
   background-color: #1e1e1e !important;
 }
