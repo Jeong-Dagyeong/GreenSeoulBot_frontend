@@ -38,6 +38,8 @@ export const handleUpload = async (params: Params, { form, setForm }: DistrictFl
         })
         .then((response) => {
           setForm({ district: params.userInput, image: params.file })
+          console.log(form.district)
+
           form.district = ''
           return response
         })
@@ -118,35 +120,6 @@ export const uploadFileFlow = ({ form, setForm }: DistrictFlowProps) => ({
     },
     path: 'uploadFile_end',
   },
-
-  // re_upload: {
-  //   message: '다른 사진을 업로드 해주세요!',
-  //   chatDisabled: true,
-  //   file: async (params: Params) => {
-  //     try {
-  //       const file = params?.files?.[0] as File
-  //       const image: string = await new Promise((resolve, reject) => {
-  //         Resizer.imageFileResizer(
-  //           file, // 원본 파일
-  //           640, // 최대 가로 너비
-  //           640, // 최대 세로 높이
-  //           'JPEG', // 변환할 이미지 포맷
-  //           100, // 품질
-  //           0, // 회전
-  //           (image) => {
-  //             resolve(image as string)
-  //           },
-  //           'base64' // 출력 타입
-  //         )
-  //       })
-  //       setForm((form) => ({ ...form, file: image }))
-  //       return image
-  //     } catch (error) {
-  //       console.error('Error resizing the image:', error)
-  //     }
-  //   },
-  //   path: 'uploadFile_end',
-  // },
 
   uploadFile_end: {
     streamSpeed: 10,
