@@ -1,8 +1,8 @@
-# Green Seoul Bot
+# Green Seoul Bot ♻️
 
-### Tech Stack
+### 🛠️ Tech Stack 🛠️
 ![next](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge)
-![Type](https://img.shields.io/badge/Typescript-007ACC?style=for-the-badge&logo=Typescript&logoColor=blue)
+![Type](https://img.shields.io/badge/Typescript-007ACC?style=for-the-badge&logo=Typescript&logoColor=white)
 ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -27,6 +27,7 @@
 |김지현|<https://github.com/jyun-KIM>|Back-end & AI|
 |김채린|<https://github.com/Chai-Lynn>|PM|
 
+### 디렉터리 구조
 <details>
   <summary>
       디렉터리 구조
@@ -49,6 +50,7 @@
  ┃ ┣ 📜chatbot-style.css
  ┃ ┣ 📜darkmode-style.css
  ┃ ┗ 📜enlargemode-style.css
+
 📦src
  ┣ 📂app
  ┃ ┣ 📂create
@@ -71,13 +73,18 @@
 ### API 명세
 |기능|method|URL|
 |------|---|---|
-|재활용 정책|post|/chatbot/policy|
-|사진 업로드|post|/chatbot/upload|
+|재활용 정책|`post`|`/chatbot/policy`|
+|사진 업로드|`post`|`/chatbot/upload`|
 
 ### Green Seoul Bot 시연 영상
-<https://youtu.be/NjjlrxQ1qb4?si=l7-dheWBtPiZNkH3>
+[시연영상]:<https://youtu.be/NjjlrxQ1qb4?si=l7-dheWBtPiZNkH3>
 
 ### Green Seoul Bot 피그마
-<https://www.figma.com/design/7dJt5U5QbMwwsBoiVEK5f3/Green-Seoul-Bot?node-id=0-1&t=A2BzgizBRsGz4Dhb-1>
+[Figma]:<https://www.figma.com/design/7dJt5U5QbMwwsBoiVEK5f3/Green-Seoul-Bot?node-id=0-1&t=A2BzgizBRsGz4Dhb-1>
 
 
+#### Green Seoul Bot 메인
+<img width="1417" alt="스크린샷 2025-01-06 오후 11 24 21" src="https://github.com/user-attachments/assets/6e815104-e384-4d29-b077-285d2b9ac912" />
+
+#### Green Seoul Bot 고대비 모드(다크모드)
+<img width="1426" alt="스크린샷 2025-01-06 오후 11 32 45" src="https://github.com/user-attachments/assets/d645502e-a00c-4fb0-8462-3c188d610409" />
