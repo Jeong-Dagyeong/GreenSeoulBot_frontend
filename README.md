@@ -27,5 +27,57 @@
 |김지현|<https://github.com/jyun-KIM>|Back-end & AI|
 |김채린|<https://github.com/Chai-Lynn>|PM|
 
+<details>
+  <summary>
+      디렉터리 구조
+  </summary>
 
-### 구현 내용
+  ```
+📦public
+ ┣ 📂fonts
+ ┃ ┣ 📜KoddiUDOnGothic-Bold.ttf
+ ┃ ┣ 📜KoddiUDOnGothic-ExtraBold.ttf
+ ┃ ┗ 📜KoddiUDOnGothic-Regular.ttf
+ ┣ 📂images
+ ┃ ┣ 📜close.png
+ ┃ ┣ 📜picture.png
+ ┃ ┣ 📜picture_darkmode.png
+ ┃ ┣ 📜recycle-icon.png
+ ┃ ┣ 📜switch-on64.png
+ ┃ ┗ 📜switch.png
+ ┗ 📂styles
+ ┃ ┣ 📜chatbot-style.css
+ ┃ ┣ 📜darkmode-style.css
+ ┃ ┗ 📜enlargemode-style.css
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂create
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📂flows
+ ┃ ┃ ┣ 📜district-flow.tsx
+ ┃ ┃ ┗ 📜upload-file-flow.tsx
+ ┃ ┣ 📂utils
+ ┃ ┃ ┗ 📜styles.tsx
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜page.tsx
+ ┗ 📂types
+ ┃ ┣ 📜FileList.tsx
+ ┃ ┗ 📜Params.tsx
+```
+
+</details>
+
+### API 명세
+|기능|method|URL|
+|------|---|---|
+|재활용 정책|post|/chatbot/policy|
+|사진 업로드|post|/chatbot/upload|
+
+### Green Seoul Bot 시연 영상
+<https://youtu.be/NjjlrxQ1qb4?si=l7-dheWBtPiZNkH3>
+
+### Green Seoul Bot 피그마
+<https://www.figma.com/design/7dJt5U5QbMwwsBoiVEK5f3/Green-Seoul-Bot?node-id=0-1&t=A2BzgizBRsGz4Dhb-1>
+
+
