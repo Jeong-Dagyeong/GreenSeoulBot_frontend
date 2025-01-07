@@ -81,6 +81,11 @@
 |재활용 정책|`post`|`/chatbot/policy`|
 |사진 업로드|`post`|`/chatbot/upload`|
 
+### 📋 구현 내용
+
+#### 오픈소스 API 활용
+React chatbotify 오픈소스 API를 활용한 
+
 ### 🎥 Green Seoul Bot 시연 영상 
 [시연 영상](<https://youtu.be/NjjlrxQ1qb4?si=l7-dheWBtPiZNkH3>)
 
