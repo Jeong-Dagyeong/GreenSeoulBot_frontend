@@ -119,7 +119,7 @@ Green Seoul Bot은 서울시 재활용품 관련 지원 정책에 특화된 AI �
 
 
 ### 🎥 Green Seoul Bot 시연 영상 
-[시연 영상](<https://youtu.be/NjjlrxQ1qb4?si=l7-dheWBtPiZNkH3>)
+[시연 영상](<https://youtu.be/e-lMW-KMPv8>)
 
 ### 🎨 Green Seoul Bot 피그마 
 [Figma](<https://www.figma.com/design/7dJt5U5QbMwwsBoiVEK5f3/Green-Seoul-Bot?node-id=0-1&t=A2BzgizBRsGz4Dhb-1>)
