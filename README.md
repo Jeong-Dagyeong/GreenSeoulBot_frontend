@@ -132,3 +132,7 @@ Green Seoul Bot은 서울시 재활용품 관련 지원 정책에 특화된 AI �
 
 #### Green Seoul Bot 고대비 모드(다크모드)
 <img width="1426" alt="스크린샷 2025-01-06 오후 11 32 45" src="https://github.com/user-attachments/assets/d645502e-a00c-4fb0-8462-3c188d610409" />
+
+#### Green Seoul Bot 확대 모드
+<img width="1670" alt="스크린샷 2025-01-08 오후 5 35 26" src="https://github.com/user-attachments/assets/6fe5b09e-6147-446c-ae7b-bf3578ce32a5" />
+
