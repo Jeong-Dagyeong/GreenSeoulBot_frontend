@@ -135,9 +135,14 @@ Green Seoul Bot은 서울시 재활용품 관련 지원 정책에 특화된 AI �
      ![음성인식 기능(fe)](https://github.com/user-attachments/assets/9a3579c2-1b82-4dfb-b0ed-171ef1fc45ea)
 
   4. input 기능
- 
+
+     텍스트 입력을 통해 버튼을 누르지 않고도 구별 재활용품 정책을 알 수 있도록함
      
-  7. 유니버셜 디자인 서체 적용(전체적인 글씨체 적용)
+     만약, 구별 재활용품 및 대형폐기물 수수료와 무관한 내용을 입력하였을 땐, GPT가 관련된 답을 해 줄 수 있도록 구현함
+
+     ![input(fe)](https://github.com/user-attachments/assets/5fca291b-fd71-4090-b818-1fdc2893fb2a)
+    
+  6. 유니버셜 디자인 서체 적용(전체적인 글씨체 적용)
  
      '한국 장애인 개발원'에서 개발된 'KoddiUD 온고딕'을 사용하여 고령자, 노안, 저시력자 등의 오독 가능성을 줄이고 가독성을 높임
 
@@ -154,6 +159,4 @@ Green Seoul Bot은 서울시 재활용품 관련 지원 정책에 특화된 AI �
 #### Green Seoul Bot 고대비 모드(다크모드)
 <img width="1426" alt="스크린샷 2025-01-06 오후 11 32 45" src="https://github.com/user-attachments/assets/d645502e-a00c-4fb0-8462-3c188d610409" />
 
-#### Green Seoul Bot 확대 모드
-<img width="1670" alt="스크린샷 2025-01-08 오후 5 35 26" src="https://github.com/user-attachments/assets/6fe5b09e-6147-446c-ae7b-bf3578ce32a5" />
 
