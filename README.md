@@ -86,6 +86,7 @@ Green Seoul Bot은 서울시 재활용품 관련 지원 정책에 특화된 AI �
 |------|---|---|
 |재활용 정책|`post`|`/chatbot/policy`|
 |사진 업로드|`post`|`/chatbot/upload`|
+|텍스트 입력|`post`|`/chatbot/chat`|
 
 ### 📋 구현 내용
 
